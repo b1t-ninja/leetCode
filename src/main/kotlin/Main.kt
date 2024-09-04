@@ -1,8 +1,9 @@
 package ninja.b1t
 
-import ninja.b1t.easy.isValid
-import ninja.b1t.easy.removeDuplicates
+import ninja.b1t.easy.isIsomorphic
+import ninja.b1t.easy.singleNumber
+
 
 fun main() {
-  println(removeDuplicates(intArrayOf(1, 1, 2)))
+  println(isIsomorphic("egg", "pdd"))
 }

@@ -1,23 +1,5 @@
 package ninja.b1t.easy
 
-//fun longestCommonPrefix(strs: Array<String>): String {
-//  var longestKnownPrefix = ""
-//  val elem = strs[0]
-//  val left = 0
-//
-//  for (right in elem.indices) {
-//    val slice = elem.slice(left..right)
-//    if (strs.all {it.startsWith(slice)}) {
-//      longestKnownPrefix = if (slice.length > longestKnownPrefix.length)
-//        slice
-//      else
-//        longestKnownPrefix
-//    }
-//  }
-//
-//  return longestKnownPrefix
-//}
-
 fun longestCommonPrefix(strs: Array<String>): String {
   return strs.reduce { acc, str ->
     acc.commonPrefixWith(str)
